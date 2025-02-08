@@ -34,7 +34,7 @@ def soma(num1: int, num2: int):
     tags=[NomeGrupo.operacoes],
     response_model=Resultado,
 )
-def soma(num1: int, num2: int):
+def soma2(num1: int, num2: int):
     total = num1 + num2
     return {"resultado": total, "outra_info": "teste"}
 
@@ -46,7 +46,7 @@ def soma(num1: int, num2: int):
     status_code=status.HTTP_200_OK,
     tags=[NomeGrupo.operacoes],
 )
-def soma(num: Numero) -> Resultado:
+def soma3(num: Numero) -> Resultado:
     total = num.num1 + num.num2
 
     if total < 0:
