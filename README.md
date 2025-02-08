@@ -40,7 +40,7 @@ This project is an example of how to create a fast and efficient API using [Fast
 ## Usage
 1. **Run the application:**
     ```
-    uvicorn main:app --reload
+    fastapi dev src/main.py
     ```
 
 2. **Access the API documentation:**
