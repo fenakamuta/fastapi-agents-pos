@@ -36,10 +36,7 @@ def soma(num1: int, num2: int):
 )
 def soma(num1: int, num2: int):
     total = num1 + num2
-    return {
-        "resultado": total,
-        "outra_info": "teste"
-    }
+    return {"resultado": total, "outra_info": "teste"}
 
 
 @router.post(

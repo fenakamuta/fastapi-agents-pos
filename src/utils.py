@@ -9,6 +9,7 @@ load_dotenv()
 API_TOKEN = int(os.getenv("API_TOKEN", 1234))
 GROC_API_KEY = os.getenv("GROC_API_KEY")
 
+
 def get_logger():
     """
     Cria e configura um logger para a aplicação FastAPI.

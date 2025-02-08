@@ -3,6 +3,7 @@ from pydantic import BaseModel, PositiveInt
 
 unused_var = 1245
 
+
 class NomeGrupo(str, Enum):
     """
     Enumeração que representa os nomes dos grupos.
