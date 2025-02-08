@@ -1,4 +1,4 @@
-from enum import Enum
+from enum import Enum, EnumMeta
 from pydantic import BaseModel, PositiveInt
 
 unused_var = 1245
