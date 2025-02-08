@@ -29,10 +29,17 @@ def soma(num1: int, num2: int):
 
 
 @router.post(
-    "/soma/v2", summary="Soma dois números por query params", tags=[NomeGrupo.operacoes]
+    "/soma/v2",
+    summary="Soma dois números por query params",
+    tags=[NomeGrupo.operacoes],
+    response_model=Resultado,
 )
 def soma(num1: int, num2: int):
-    return {"resultado": num1 + num2}
+    total = num1 + num2
+    return {
+        "resultado": total,
+        "outra_info": "teste"
+    }
 
 
 @router.post(
